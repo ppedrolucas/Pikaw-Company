@@ -1,0 +1,279 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    --bs-primary: #0d6efd;
+}
+/*MENU*/
+.menu{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    padding: 0 15px;
+    display: flex; /*COLOCAR AS TAGS UM DO LADO DA OUTRA*/
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+nav, li{
+    list-style: none;
+}
+.menu, nav ul{
+    display: flex; /*ALINHAR O ITENS DENTRO DE HEADER, DE NAV, UL*/
+    align-items: center;
+}
+nav li{
+    margin: 0 20px; /*SEPARAR CADA LI ENTRE SI*/
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav li a.li:hover{
+    
+    color: var(--bs-primary);
+}
+
+nav .btnEntrar:hover{
+    transform: scale(1.3);
+}
+/*BANNER*/
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../img/pikaw16-9.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 750px;
+}
+.box{
+    color: #fff;
+    background: none;
+    text-align: center;
+    padding-top: 170px;
+    padding-bottom: 70px;
+    width: 70%;
+    margin: 0 auto;
+}
+.box h1{
+    font-weight: 700;
+    font-size: 90px;
+    
+}
+.box button{
+    padding: 18px 30px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+/*SOBRE*/
+.sobre{
+    color: #fff;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    
+    
+}
+.sobre img{
+    height: 450px;
+    width: 350px;
+
+}
+.sobre-texto{
+    width: 550px;
+}
+.sobre-texto h2{
+    font-size: 75px;
+    margin-bottom: 25px;
+    text-transform: capitalize
+}
+.sobre-texto h5{
+    font-size: 22px;
+    margin-bottom: 30px;  
+}
+.sobre-texto p{
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.sobre-conteudo{
+    width: 1130px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+/*SERVIÇOS*/
+.boxSob{
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+    padding: 50px 0;
+}
+
+div.colunas{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.banner article{
+    background: #ffffff85;
+    color: black;
+    margin: 30px 8px;
+    padding: 70px 13px;
+    text-align: center;
+    border-radius: 10px;
+}
+.item i{
+    
+    font-size: 50px;
+    padding: 20px;
+    color: var(--bs-primary);
+}
+.banner h3{
+    margin-bottom: 18px;
+}
+.banner p{
+    margin-bottom: 50px;
+}
+/*FOMULÁRIO*/
+.job{
+    color: #fff;
+    background: #111;
+    height: 700px;
+}
+.job h1{
+    color: #fff;
+}
+.coluna{
+    width: 85%;
+    margin: 0 auto;
+}
+.formCont{
+    padding: 0 12px;
+}
+.formCont input, textarea{
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px; /*MARGIN SERVE PARA DAR ESPAÇAMENTO ENTRE OS ELEMENTOS*/
+    border-radius: 8px;
+    border: none;
+    background: #ffffff85;
+    color: #111;
+}
+.formCont textarea{
+    height: 200px;
+    margin-bottom: 10px;
+}
+button.botao{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+}
+button.botao:hover{
+    transform: scale(1.2);
+}
+/*RODAPÉ*/
+footer .socialMedias{
+    background: #000;
+    width: 100%;
+    padding: 40px;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+h5{
+    padding-top: 30px 0;
+}
+p{
+    font-size: 15px;
+}
+span{
+    color: var(--bs-primary);
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.socialMedias i{
+    margin: 0 30px;
+}
+footer{
+    background: #000;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+/*SMARTPHONE*/
+@media screen and (max-width: 680px) {
+    .menu, nav{
+        display: none;
+    }
+    .menu, img{
+        display: block;
+        padding: 20px 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .banner{
+        height: 100vh;
+        
+    }
+    .box h1{
+        font-size: 50px;
+    }
+    .box p{
+        margin-bottom: 10px;
+    }
+    .box button{
+        padding: 15px 20px;
+    }
+    .sobre-conteudo{
+        flex-direction: column;
+    }
+    .sobre-texto{
+        text-align: center;
+        width: 350px;
+    }
+    .sobre-texto h2{
+        font-size: 45px;
+        margin-bottom: 18px;
+    }
+    .sobre-texto h5{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .sobre-texto p{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    .services-banner{
+        height: 130vh;
+    }
+    .boxSob{
+        padding: 20px 0;
+    }
+    .colunas{
+        flex-direction: column;
+    }
+    .colunas article{
+        padding: 30px 0;
+        margin: 10px 0;
+    }
+    .portifolio{
+        background: #111;
+        margin: 0;
+    }
+}
