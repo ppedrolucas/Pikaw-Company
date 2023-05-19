@@ -56,9 +56,25 @@ nav .btnEntrar:hover{
     margin: 0 auto;
 }
 .box h1{
+    
     font-weight: 700;
     font-size: 90px;
-    
+    border-right: 4px solid;
+    width: 11ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10), blinking 0.5s infinite step-end alternate;
+}
+@keyframes typing{
+        from{
+            width: 0;
+        }
+}
+@keyframes blinking{
+    50%{
+        border-color: transparent;
+
+    }
 }
 .box button{
     padding: 18px 30px;
@@ -85,6 +101,9 @@ nav .btnEntrar:hover{
     font-size: 75px;
     margin-bottom: 25px;
     text-transform: capitalize
+}
+.sobre-texto strong{
+    font-size: 22px;
 }
 .sobre-texto h5{
     font-size: 22px;
@@ -193,6 +212,12 @@ p{
 }
 span{
     color: var(--bs-primary);
+}
+.socialMedias a{
+    color: #fff;
+}
+.socialMedias a:hover{
+    color: #0d6efd;
 }
 a{
     text-decoration: none;
