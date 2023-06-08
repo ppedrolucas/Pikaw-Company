@@ -59,23 +59,8 @@ nav .btnEntrar:hover{
     
     font-weight: 700;
     font-size: 90px;
-    border-right: 4px solid;
-    width: 11ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(10), blinking 0.5s infinite step-end alternate;
 }
-@keyframes typing{
-        from{
-            width: 0;
-        }
-}
-@keyframes blinking{
-    50%{
-        border-color: transparent;
 
-    }
-}
 .box button{
     padding: 18px 30px;
     font-size: 20px;
